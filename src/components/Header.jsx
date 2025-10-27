@@ -4,10 +4,12 @@ import logo from "../assets/logo.png";
 
 const Header = () => {
   return (
-    <header className="header">
+      <header className="header">
       <div className="header__logo">
-        <img src={logo}  alt="SARIS São Paulo" />
+        <Link to="/"><img src={logo} alt="SARIS São Paulo" /></Link>
+        
       </div>
+
       <nav className="header__nav">
         <Link to="/" className="nav__link">Home</Link>
         <Link to="/experience" className="nav__link">The SARIS Experience</Link>
@@ -15,8 +17,10 @@ const Header = () => {
         <Link to="/faq" className="nav__link">FAQ</Link>
         <Link to="/waitlist" className="nav__link">Waitlist</Link>
       </nav>
-      <button className="nav__btn">Sign Up</button>
+      <Link to="/signup" className="nav__link"><button className="nav__btn">Sign Up</button></Link>
+      
     </header>
+
 
   );
 };

@@ -8,10 +8,11 @@ const Footer = () => {
 
       <div className="footer__top">
         <div className="footer__left">
-          <img src={logo} alt="SARIS São Paulo" className="footer__logo" />
+          <Link to="/"><img src={logo} alt="SARIS São Paulo" className="footer__logo" /></Link>
+          
           <p className="footer__follow">Follow us on:</p>
           <div className="footer__socials">
-            <span className="social__icon"><img src="https://framerusercontent.com/images/cGnXMN3RHYvM6awzQQEhr0nFVbA.svg?width=18&height=18" alt="" /></span>
+            <a href="https://www.instagram.com/saris.saopaolo/" Target="_blank" ><img src="https://framerusercontent.com/images/cGnXMN3RHYvM6awzQQEhr0nFVbA.svg?width=18&height=18" alt="" /></a>
           </div>
         </div>
 
