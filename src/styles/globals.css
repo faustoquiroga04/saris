@@ -22,4 +22,21 @@ body {
 
 .home {
   color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
+
+.home__sections{
+  max-width: 1200px;
+  margin-bottom: 30px;
+}
+
+.home img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover; 
+  object-position: center;
+}
+
