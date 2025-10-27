@@ -1,0 +1,25 @@
+:root{
+  --token-0ebb4cb9-ebaa-4615-a594-9cba57efb1be: #0a5795;
+  --token-0b5faa2a-01e1-46a2-952b-18a247a76445: #2685c3;
+  --token-f76c80e4-24c3-4158-b8cf-0c2015ff5a02: #101011;
+  --token-2b55fd47-2d87-489e-afe3-1427582343b8: #2b2b2c;
+  --token-67d981e7-2754-44dc-bd50-7adae26c5928: #606266;
+  --token-6d6cb8a0-a226-45ce-9101-24178b674ba6: #a7a7a7;
+  --token-b44aad5a-aed8-49ef-8497-aaf288733442: #f0f2f6;
+  --token-4a707b9d-a31e-4c43-92fb-0b65962a4be7: #fff;
+  --token-266afb40-a3c3-49be-addb-6dd35f6ddfe3: #000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-image: url("/src/assets/bg/bg-texture.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.home {
+  color: black;
+}
