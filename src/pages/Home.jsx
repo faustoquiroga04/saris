@@ -1,40 +1,52 @@
-import logo from '../assets/logo.png'
+import { Link } from 'react-router-dom';
+import logo_saris from '../assets/logo_saris.png'
+import '../styles/home.css'
+import img_flyer from '../assets/flyer.jpg'
 
 const Home = () => {
   return (
-    <div className="home">
-      <img src={logo} alt="logo" />
-      <div className='home__sections'>
-        <section>
-          <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, delectus voluptate placeat odit libero molestiae eaque suscipit </h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam sunt assumenda ratione placeat ipsa sed autem dicta in suscipit. Sint deserunt voluptates libero, cupiditate repudiandae perspiciatis voluptas facere. Fugit, in?
-          Est facilis provident, quaerat perspiciatis perferendis deleniti enim, quibusdam eum quam voluptate odit ipsa inventore aliquam amet nemo temporibus, ad adipisci sequi minus. Labore excepturi eligendi voluptas ea et est!
-          Sed fugiat, error animi iusto facere voluptatibus minus, expedita corporis reiciendis harum neque ducimus quidem dolor molestias, rem sapiente! Expedita dignissimos nostrum consequuntur rerum esse commodi minima sapiente eaque eius.
-          Molestias, esse. Beatae molestias ratione inventore placeat sint quod facere expedita repellendus quaerat non. Assumenda fuga earum rerum ea ab, ipsa inventore, eos dolore officia corporis eligendi labore ipsam minima!</p>
-        </section>
-        <section>
-          <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, delectus voluptate placeat odit libero molestiae eaque suscipit </h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam sunt assumenda ratione placeat ipsa sed autem dicta in suscipit. Sint deserunt voluptates libero, cupiditate repudiandae perspiciatis voluptas facere. Fugit, in?
-          Est facilis provident, quaerat perspiciatis perferendis deleniti enim, quibusdam eum quam voluptate odit ipsa inventore aliquam amet nemo temporibus, ad adipisci sequi minus. Labore excepturi eligendi voluptas ea et est!
-          Sed fugiat, error animi iusto facere voluptatibus minus, expedita corporis reiciendis harum neque ducimus quidem dolor molestias, rem sapiente! Expedita dignissimos nostrum consequuntur rerum esse commodi minima sapiente eaque eius.
-          Molestias, esse. Beatae molestias ratione inventore placeat sint quod facere expedita repellendus quaerat non. Assumenda fuga earum rerum ea ab, ipsa inventore, eos dolore officia corporis eligendi labore ipsam minima!</p>
-        </section>
-        <section>
-          <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, delectus voluptate placeat odit libero molestiae eaque suscipit </h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam sunt assumenda ratione placeat ipsa sed autem dicta in suscipit. Sint deserunt voluptates libero, cupiditate repudiandae perspiciatis voluptas facere. Fugit, in?
-          Est facilis provident, quaerat perspiciatis perferendis deleniti enim, quibusdam eum quam voluptate odit ipsa inventore aliquam amet nemo temporibus, ad adipisci sequi minus. Labore excepturi eligendi voluptas ea et est!
-          Sed fugiat, error animi iusto facere voluptatibus minus, expedita corporis reiciendis harum neque ducimus quidem dolor molestias, rem sapiente! Expedita dignissimos nostrum consequuntur rerum esse commodi minima sapiente eaque eius.
-          Molestias, esse. Beatae molestias ratione inventore placeat sint quod facere expedita repellendus quaerat non. Assumenda fuga earum rerum ea ab, ipsa inventore, eos dolore officia corporis eligendi labore ipsam minima!</p>
-        </section>
-        <section>
-          <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, delectus voluptate placeat odit libero molestiae eaque suscipit </h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam sunt assumenda ratione placeat ipsa sed autem dicta in suscipit. Sint deserunt voluptates libero, cupiditate repudiandae perspiciatis voluptas facere. Fugit, in?
-          Est facilis provident, quaerat perspiciatis perferendis deleniti enim, quibusdam eum quam voluptate odit ipsa inventore aliquam amet nemo temporibus, ad adipisci sequi minus. Labore excepturi eligendi voluptas ea et est!
-          Sed fugiat, error animi iusto facere voluptatibus minus, expedita corporis reiciendis harum neque ducimus quidem dolor molestias, rem sapiente! Expedita dignissimos nostrum consequuntur rerum esse commodi minima sapiente eaque eius.
-          Molestias, esse. Beatae molestias ratione inventore placeat sint quod facere expedita repellendus quaerat non. Assumenda fuga earum rerum ea ab, ipsa inventore, eos dolore officia corporis eligendi labore ipsam minima!</p>
-        </section>
-      </div>
-    </div>
+    <main className="home">
+      <section className='hero'>
+        <Link to='/'> <img src={logo_saris} alt='Logo' /></Link>
+        <h1>A NEW ERA OF CONFIDENCE BEGINS</h1>
+        <p>A lifestyle treatment is the catalyst for restoring self-confidence. It’s time to feel proud of your appearance and empowered in your reality. Whether it’s a new hairline, a brighter smile, or any part of you that’s ready to feel renewed, SARIS will lead the way.</p>
+        <Link to='/signup' className='button'><button className='btn'>Sign Up</button></Link>
+      </section>
+
+      <section className='content__module'>
+        <img src={img_flyer} alt="flyer" />
+        <p><span>This is a celebration of self-transformation, innovation, and restored confidence.</span><br /> The launch weekend will feature an exclusive series of events, including talks and live Q&As with the SARIS medical team, informational sessions on our signature treatments, and early sign-up opportunities for new patients.</p>
+        <br />
+        <p>Guests will enjoy curated experiences, private consultations, and a first look at how SARIS is redefining confidence and restoration through modern aesthetics. From science to artistry, SARIS introduces a new way to restore confidence.</p>
+      </section>
+
+      <section className='section__saris'>
+        <h2>YOUR JOURNEY WITH SARIS</h2>
+        <h3>SARIS offers an array of lifestyle treatments abroad meant to empower your sense of self and embolden your reality.</h3>
+  
+        <div>
+          <h4>Perfected with AI, personalized with care</h4>
+          <p>SARIS is AI powered by personalization. Our technology streamlines every aspect of your lifestyle treatment journey (from surgical planning to concierge services), ensuring a flawless, fully guided experience in minutes.</p>
+          <ul className="bullet-list indented">
+            <li>Itinerary built around your schedule, preferences, and privacy needs.</li>
+            <li>Business or first-class travel and transfer, including VIP airport service and luxury ground transport.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>World-class Medical Professionals & Experiences</h4>
+          <p>
+            With elite clinical care, renowned specialists, and profound precision and compassion, our results speak
+            for themselves.
+          </p>
+          <ul className="bullet-list indented">
+            <li>Private consultations, aftercare kits, and optional wellness add-ons like massage, nutrition, or IV therapy.</li>
+            <li>Exclusive medical facilities and luxury recovery accommodations.</li>
+          </ul>
+        </div>
+    </section>
+
+    </main>
   );
 };
 

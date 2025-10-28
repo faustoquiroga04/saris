@@ -6,8 +6,7 @@ const Header = () => {
   return (
       <header className="header">
       <div className="header__logo">
-        <Link to="/"><img src={logo} alt="SARIS São Paulo" /></Link>
-        
+        <Link className="logo" to="/"><img src={logo} alt="SARIS São Paulo" /></Link>
       </div>
 
       <nav className="header__nav">
@@ -17,11 +16,9 @@ const Header = () => {
         <Link to="/faq" className="nav__link">FAQ</Link>
         <Link to="/waitlist" className="nav__link">Waitlist</Link>
       </nav>
-      <Link to="/signup" className="nav__link"><button className="nav__btn">Sign Up</button></Link>
+      <Link to="/"><button className="btn nav__btn">Sign Up</button></Link>
       
     </header>
-
-
   );
 };
 
