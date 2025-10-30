@@ -8,15 +8,15 @@ const Home = () => {
     <main className="home">
       <section className='hero'>
         <Link to='/'><img src={logo_saris} alt='Logo' /></Link>
-        <h1>A NEW ERA OF CONFIDENCE BEGINS</h1>
+        <h2>A NEW ERA OF CONFIDENCE BEGINS</h2>
         <p>A lifestyle treatment is the catalyst for restoring self-confidence. It’s time to feel proud of your appearance and empowered in your reality. Whether it’s a new hairline, a brighter smile, or any part of you that’s ready to feel renewed, SARIS will lead the way.</p>
-        <Link to='/waitlist' className='button'><button className='btn'>Sign Up</button></Link>
+        <Link to='/waitlist' className='button'><button className='btn hero__btn'>Sign Up</button></Link>
       </section>
 
       <section className='content__module'>
         <Link to="/waitlist"><img src={flyer} alt="flyer" /></Link>
         <div className='celebration'>
-          <p><span>This is a celebration of self-transformation, innovation, and restored confidence.</span> The launch weekend will feature an exclusive series of events, including talks and live Q&As with the SARIS medical team, informational sessions on our signature treatments, and early sign-up opportunities for new patients.</p>
+          <p>This is a celebration of self-transformation, innovation, and restored confidence. The launch weekend will feature an exclusive series of events, including talks and live Q&As with the SARIS medical team, informational sessions on our signature treatments, and early sign-up opportunities for new patients.</p>
           <br />
           <p>Guests will enjoy curated experiences, private consultations, and a first look at how SARIS is redefining confidence and restoration through modern aesthetics. From science to artistry, SARIS introduces a new way to restore confidence.</p>
         </div>
