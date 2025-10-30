@@ -64,7 +64,8 @@
 
 /* --- button --- */
 .nav__btn { 
-  outline: none; 
+  outline: none;
+  padding: .7rem 1.5rem;
 }
 
 /* --- overlay --- */
