@@ -24,9 +24,9 @@ section {
 }
 
 .hero p {
-  font-size: var(--font-h3);
+  font-size: var(--font-h4);
   font-weight: 600;
-  max-width: 900px;
+  max-width: 800px;
   text-align: start;
   margin: 1.5rem 0;
 }
@@ -101,13 +101,10 @@ section {
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 600px) {
-  main { padding: 1rem 3rem; }
+  main { padding: 1rem; }
 
   .hero img { max-width: 300px; }
   .hero .btn { padding: .7rem 1rem; }
-  .hero p {
-    font-size: 26px;
-  }
 
   .content__module { margin: 2rem 0; }
 
