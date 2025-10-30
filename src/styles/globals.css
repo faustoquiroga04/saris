@@ -4,7 +4,6 @@
   --text-dark: #0D314C;
   --neutral-light: #FBF8F3;
   --neutral-dark: #0A1F34;
-
   --font-serif: "Kepler Std", serif;
   --font-sans: "Inter", sans-serif;
 }
@@ -13,7 +12,6 @@
   margin: 0;
   padding: 0;
   font-family: var(--font-sans);
-  color: var(--primary);
 }
 
 h1, h2 {
@@ -21,29 +19,33 @@ h1, h2 {
   color: var(--primary);
 }
 
-
-
 .btn {
   font-family: var(--font-sans);
-  padding: 0.7rem 1.5rem;
+  padding: 0.7rem 1rem;
   font-size: 16px;
   font-weight: 600;
-  background-color: var(--primary);
-  color: var(--secondary);
-  border: 2px solid var(--primary);
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px;
+  box-shadow: rgba(16, 16, 17, 0.6) 0px 6px 20px 0px;
+  color: #000000c7;
+  border: 0;
+  outline: solid 3px var(--primary);
 }
 
 .btn:hover {
   transform: translateY(-2px);
-  background-color: transparent;
   color: var(--primary);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(16, 16, 17, 0.6) 0px 6px 20px 0px;
   cursor: pointer;
+  outline: solid 3px var(--primary);
 }
 
 .btn:active {
   transform: translateY(0);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+li::marker {
+  color: var(--primary);
 }

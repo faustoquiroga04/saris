@@ -1,23 +1,26 @@
-import { Link } from "react-router-dom";
-import "../styles/header.css"
-import logo from "../assets/logo.png";
+import { NavLink } from "react-router-dom";
+import "../styles/header.css";
+import logo from "../assets/logo-white.png";
 
 const Header = () => {
   return (
-      <header className="header">
+    <header className="header">
       <div className="header__logo">
-        <Link className="logo" to="/"><img src={logo} alt="SARIS São Paulo" /></Link>
+        <NavLink className="logo" to="/">
+          <img src={logo} alt="SARIS São Paulo" />
+        </NavLink>
       </div>
 
       <nav className="header__nav">
-        <Link to="/" className="nav__link">Home</Link>
-        <Link to="/experience" className="nav__link">The SARIS Experience</Link>
-        <Link to="/technique" className="nav__link">The Technique</Link>
-        <Link to="/faq" className="nav__link">FAQ</Link>
-        <Link to="/waitlist" className="nav__link">Waitlist</Link>
+        <NavLink to="/" className="nav__link">Home</NavLink>
+        <NavLink to="/experience" className="nav__link">The SARIS Experience</NavLink>
+        <NavLink to="/technique" className="nav__link">The Technique</NavLink>
+        <NavLink to="/faq" className="nav__link">FAQ</NavLink>
+        <NavLink to="/waitlist" className="nav__link">Waitlist</NavLink>
       </nav>
-      <Link to="/"><button className="btn nav__btn">Sign Up</button></Link>
-      
+      <NavLink to="/waitlist">
+        <button className="btn nav__btn">Sign Up</button>
+      </NavLink>
     </header>
   );
 };

@@ -7,8 +7,7 @@ main {
 }
 
 section {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding: 0 1.5rem;
 }
 
 /* HERO */
@@ -21,24 +20,25 @@ section {
 }
 
 .hero img {
-  width: 400px;
+  width: 500px;
   margin-top: 1rem;
 }
 
 .hero h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
   letter-spacing: -1px;
   margin-top: 2rem;
 }
 
 .hero p {
-  font-size: 1.4rem;
-  max-width: 820px;
+  font-size: 1.8rem;
+  max-width: 600px;
   margin: 1.5rem auto 2rem;
   font-family: var(--font-sans);
-  font-weight: 400;
-  color: var(--text-dark);
+  font-weight: 600;
+  word-spacing: -2px;
+  line-height: 35px;
 }
 
 /* CTA Button */
@@ -49,17 +49,32 @@ section {
 
 /* CONTENT MODULE */
 .content__module {
-  max-width: 950px;
+  max-width: 900px;
   margin: 6rem auto;
   text-align: left;
 }
 
 .content__module img {
   width: 100%;
-  max-width: 580px;
   border-radius: 6px;
   display: block;
   margin: 0 auto 2rem;
+}
+
+.content__module .celebration {
+  background-image: url('../assets/content_module.png');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1rem;
+}
+
+.content__module .celebration p {
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  word-spacing: -2px;
+  line-height: 35px;
 }
 
 .content__module p {
@@ -67,11 +82,6 @@ section {
   font-family: var(--font-sans);
   color: var(--text-dark);
   line-height: 1.55;
-}
-
-.content__module span {
-  font-weight: 700;
-  color: var(--primary);
 }
 
 /* SECTION SARIS */
@@ -89,22 +99,26 @@ section {
 
 .section__saris h3 {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: bolder;
   color: var(--text-dark);
   margin-bottom: 3rem;
+  word-spacing: -2px;
+  line-height: 35px;
 }
 
 .section__saris h4 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 600;
   margin-top: 3rem;
+  color: var(--blue);
+  font-weight: bolder;
 }
 
 
 .section__saris p {
   font-family: var(--font-sans);
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 600;
   color: var(--text-dark);
   margin-top: 0.5rem;
 }
@@ -115,4 +129,5 @@ section {
   margin-top: 1rem;
   padding-left: 1.5rem;
   color: var(--text-dark);
+  font-weight: 600;
 }
