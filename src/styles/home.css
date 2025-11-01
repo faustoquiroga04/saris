@@ -1,7 +1,13 @@
-main {
+.home__container {
+   background-color: #fff;
+}
+
+.home {
   background: var(--secondary);
   color: var(--text-dark);
   padding: 3rem 5rem;
+  max-width: 1350px;
+  margin: auto;
 }
 
 section {
@@ -81,7 +87,6 @@ section {
 .section__saris h3 {
   margin: 2rem 0;
   font-family: var(--font-sans);
-  color: var(--text-dark);
 }
 
 .section__saris h4 {

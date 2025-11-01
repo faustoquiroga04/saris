@@ -12,8 +12,13 @@
 }
 
 /* --- logo --- */
-.header__logo img { 
-  width: 120px; 
+.header__logo { 
+  width: 90px; 
+  height: 40px;
+}
+
+.header__logo img {
+  width: 100%;
 }
 
 /* --- nav links --- */

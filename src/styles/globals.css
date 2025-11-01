@@ -9,7 +9,7 @@
   --font-sans: "Inter", sans-serif;
 
   /* Font sizes */
-  --font-h1: 3.5rem;
+  --font-h1: 70px;
   --font-h2: 3rem;
   --font-h3: 2rem;
   --font-h4: 1.8rem;
@@ -93,9 +93,20 @@ li::marker {
 }
 
 /* ===== Responsive Typography ===== */
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   :root {
-    --font-h1: 2.2rem;
+    --font-h1: 60px;
+    --font-h2: 2rem;
+    --font-h3: 1.6rem;
+    --font-h4: 1.4rem;
+    --font-body-lg: 1.25rem;
+    --font-body: 1.1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    --font-h1: 40px;
     --font-h2: 2rem;
     --font-h3: 1.6rem;
     --font-h4: 1.4rem;

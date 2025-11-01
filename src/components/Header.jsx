@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/header.css";
-import logo from "../assets/logo-white.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +22,7 @@ const Header = () => {
     <header className="header">
       <div className="header__logo">
         <NavLink className="logo" to="/">
-          <img src={logo} alt="SARIS São Paulo" />
+          <img src='https://framerusercontent.com/images/AzmMpDsaJrnWT09OnC8qqxVBIk.png?width=2854&height=1316' alt="SARIS São Paulo" />
         </NavLink>
       </div>
 
