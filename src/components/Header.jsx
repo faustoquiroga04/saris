@@ -29,7 +29,7 @@ const Header = () => {
 
       <nav className={`header__nav ${isOpen ? "open" : ""}`}>
         <NavLink to="/" className="nav__link" onClick={() => setIsOpen(false)}>Home</NavLink>
-        <NavLink to="/experience" className="nav__link" onClick={() => setIsOpen(false)}>The SARIS Experience</NavLink>
+        <NavLink to="/saris-experience" className="nav__link" onClick={() => setIsOpen(false)}>The SARIS Experience</NavLink>
         <NavLink to="/technique" className="nav__link" onClick={() => setIsOpen(false)}>The Technique</NavLink>
         <NavLink to="/faq" className="nav__link" onClick={() => setIsOpen(false)}>FAQ</NavLink>
         <NavLink to="/waitlist" className="nav__link" onClick={() => setIsOpen(false)}>Waitlist</NavLink>

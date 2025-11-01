@@ -1,7 +1,7 @@
 :root {
   --primary: #175688;
   --secondary: #F8F1E8;
-  --text-dark: #0D314C;
+  --text-dark: #101011;
   --neutral-light: #FBF8F3;
   --neutral-dark: #0A1F34;
 
@@ -37,7 +37,7 @@ h1, h2, h3, h4 {
   font-family: var(--font-serif);
   color: var(--primary);
   font-weight: 600;
-  line-height: 1.4;
+  line-height: 1;
 }
 
 h1 { font-size: var(--font-h1); }
