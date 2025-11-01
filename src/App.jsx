@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import SarisExperience from "./pages/SarisExperience";
 import Technique from "./pages/Technique";
+import Faq from "./pages/Faq";
 import Waitlist from "./pages/Waitlist";
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/saris-experience" element={<SarisExperience />} />
         <Route path="/technique" element={<Technique />} />
-        <Route path="/faq" element={<Home />} />
+        <Route path="/faq" element={<Faq />} />
         <Route path="/waitlist" element={<Waitlist />} />
       </Routes>
       <Footer />
