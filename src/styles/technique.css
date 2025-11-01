@@ -68,6 +68,7 @@
 @media (max-width: 1200px) {
     .top__side h1 {
         font-size: 60px;
+        margin-top: 2rem;
     }
     .top__side img {
         padding: 2rem 4rem;
