@@ -4,25 +4,41 @@ import "../styles/header.css";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
   const toggleMenu = () => setIsOpen(!isOpen);
 
   useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
 
-    return () => {
-      document.body.style.overflow = "";
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setHidden(true);
+      } else {
+        setHidden(false);
+      }
+
+      setLastScrollY(currentScrollY);
     };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "";
+    return () => (document.body.style.overflow = "");
   }, [isOpen]);
 
   return (
-    <header className="header">
+    <header className={`header ${hidden ? "header--hidden" : ""}`}>
       <div className="header__logo">
         <NavLink className="logo" to="/">
-          <img src='https://framerusercontent.com/images/AzmMpDsaJrnWT09OnC8qqxVBIk.png?width=2854&height=1316' alt="SARIS São Paulo" />
+          <img
+            src="https://framerusercontent.com/images/AzmMpDsaJrnWT09OnC8qqxVBIk.png?width=2854&height=1316"
+            alt="SARIS São Paulo"
+          />
         </NavLink>
       </div>
 
