@@ -90,6 +90,9 @@
     .top__side h1 {
         font-size: 40px;
     }
+    .top__side img {
+        padding: 1rem;
+    }
     .technique__content {
         max-width: 840px;
         box-shadow: none;
@@ -97,5 +100,8 @@
     }
     .technique p, .technique h4 {
         font-size: 16px;
+    }
+    .technique__section{
+        margin: 1rem 0;
     }
 }
