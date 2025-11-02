@@ -14,6 +14,11 @@ function AnimatedRoutes() {
   const [displayLocation, setDisplayLocation] = useState(location);
   const [transitionStage, setTransitionStage] = useState("fadeIn");
 
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" }); 
+  }, [location]);
+
   useEffect(() => {
     if (location !== displayLocation) {
       setTransitionStage("fadeOut");

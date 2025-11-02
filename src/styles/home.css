@@ -30,6 +30,7 @@ section {
 }
 
 .hero p {
+  color: var(--primary);
   font-size: var(--font-h4);
   font-weight: 600;
   max-width: 800px;

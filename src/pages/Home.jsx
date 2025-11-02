@@ -6,8 +6,8 @@ const Home = () => {
     <div className="home__container">
       <main className="home">
         <section className='hero'>
-          <Link to='/'><img src='https://framerusercontent.com/images/xaeHgQ7fzizdismcDg3gVIF0kVw.png?width=2854&height=1316' alt='Logo' /></Link>
-          <h2>A NEW ERA OF CONFIDENCE BEGINS</h2>
+          <img src='https://framerusercontent.com/images/xaeHgQ7fzizdismcDg3gVIF0kVw.png?width=2854&height=1316' alt='Logo' />
+          <strong><h2>A NEW ERA OF CONFIDENCE BEGINS</h2></strong>
           <p>A lifestyle treatment is the catalyst for restoring self-confidence. It’s time to feel proud of your appearance and empowered in your reality. Whether it’s a new hairline, a brighter smile, or any part of you that’s ready to feel renewed, SARIS will lead the way.</p>
         </section>
 
