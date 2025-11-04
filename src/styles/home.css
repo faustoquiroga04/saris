@@ -107,7 +107,10 @@ section {
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 600px) {
-  main { padding: 1rem; }
+
+  .home {
+    padding: 1rem;
+  }
 
   .hero img { max-width: 300px; }
   .hero .btn { padding: .7rem 1rem; }
